@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+<html>
+<script>
+    function countUpperChars(string) {
+    let str1 = string.split("");
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (str1[i] === str1[i].toUpperCase()) {
+            count++;
+        }
+    }
+    if (count === 0) {
+        document.write("The Strings is not contain upper char");
+    } else {
+        document.write(count);
+    }
+}
+countUpperChars("Hoang")
+</script>
+</html>
+</body>

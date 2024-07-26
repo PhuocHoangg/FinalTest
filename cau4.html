@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<button id="nhap" onclick="getNewInfor()">Nhập thông tin điện thoại</button>
+<body>
+<script>
+class Phone{
+    constructor(phoneCode,phoneName,brandOfProduct,price){
+        this.phoneCode=phoneCode;
+        this.phoneName=phoneName;
+        this.brandOfProduct=brandOfProduct;
+        this.price=price
+    }
+    getname(){
+        return this.phoneName;
+    }
+    getCode(){
+        return this.phoneCode;
+    }
+    getBrand(){
+        return this.brandOfProduct;
+    }
+    getPrice(){
+        return this.price;
+    }
+
+}
+
+let s= new Phone("2018","Iphone","Apple","500$");
+document.write("<br>"+s.getname()+"<br>",s.getCode()+"<br>",s.getBrand()+"<br>",s.getPrice());
+function getNewInfor(){
+    let a=prompt("Nhập tên điện thoại");
+    let b=prompt("Nhập mã điện thoại");
+    let c=prompt("Nhập hãng điện thoại");
+    let d=prompt("Nhập giá");
+    let s=new Phone(a,b,c,d);
+    document.write("<br>"+s.getname()+"<br>",s.getCode()+"<br>",s.getBrand()+"<br>",s.getPrice())
+}
+
+
+</script>
+</body>
+</html>
